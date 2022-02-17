@@ -1,0 +1,87 @@
+base inductiva
+    2*3 + 1 <= 2^3
+    7 <= 8
+    Es cierto en el caso base
+
+Paso inductivo
+
+    Suponer que para K>=3, se cumple 2K + 1 <= 2K
+    Comprobar que para K+1 se cumple que 2(K+1) + 1 <= 2^K+1
+
+    No vamos a basar en:
+    A <= -> A + C <= B + C
+    A <= B y B <= C -> A <= C
+    Para K >= 3 -> 2 <= 2^K
+    2(K + 1) + 1 = 2k + 1 + 2
+    2k + 1 + 2 <= 2^K + 2 <= 2^K + 2^K
+    2k + 1 + 2 <= 2^K + 2^K
+    2(K+1) + 1 <= 2 * 2^K 
+    2(K+1 ) + 1 <= 2^K+1
+
+    //(C) 2^K + (A)2
+
+                2 <= (B)2^K
+
+            2^K + 2 <= 2^K + 2^K//
+
+Base inductiva (N=4)
+    4^2 <= 2^4
+
+    16 <= 16
+
+    Es cierto para el caso base
+Paso inductivo
+    Suponer que para K>= 4 se cumple
+    k^2 <= 2^k
+    Comprobar que para K + 1 se cumple
+    (K + 1) ^ 2 <= 2^(K+1)
+
+    Me voy a basar
+    1) Si A <= B -> A + C <= B + C
+    2) Si A <= B   y B <= C -> A <= Comprobar
+
+    2n + 1 <= 2^n
+
+    1)k^2 + 2K + 1 <= 2^K + 2K + 1 <= 2^K + 2^K
+    K^2 + 2K + 1 <= 2^K + 2^k
+    (K+1)^2 <= 2 * 2^k
+    (K+1)^2 <= 2^K+1
+    cumple
+Gauss
+Base inductiva (N=1)
+    1(1 + 1)/2 = 2/2 = 1
+    Es cierto para el caso base
+Paso inductivo
+    Suponer que K >= 1 se cumple
+     i = K(K+1)/2
+     Demostrar que K + 1 se cumple
+     i = (K + 1)(K + 2)/2
+
+     SUM i + (K + 1)
+     = K(K + 1)/2 + (K + 1)
+     = K(K + 1) + 2(K + 1)/2
+     SUM i = (K + 2)(K + 2)/2
+
+    n >= 1 -> 2^n - 1 
+
+    A1 = 2
+    An + 1 = 2An + 1
+
+Base inductiva (n = 1)
+
+    A1 = 1
+    2^1 - 1 = 2 - 1 = 1
+    Es cierto para el caso base
+Paso inductivo
+
+    Suponer que K >= 1 se cumple
+    Ak = 2^K - 1
+    Comprobar para K + 1 se cumple 2^K+1 - 2
+
+    An + 1 = 2An + 1
+    Ak + 1 = 2Ak + 1
+            = 2(2^k - 1) + 1
+            = 2 * 2^K - 2 + 1
+            = 2 * 2^K - 1
+            = 2^K+1 - 1
+
